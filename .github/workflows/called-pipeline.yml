@@ -1,0 +1,10 @@
+name: Called pipeline
+on:
+  workflow_call:
+jobs:
+  called-workflow:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Hell
+        run: |
+          echo "Hello World"
